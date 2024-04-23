@@ -27,5 +27,13 @@ class activity_login : AppCompatActivity() {
             val pantallaregistrarse = Intent(this, activity_registrarse::class.java)
             startActivity(pantallaregistrarse)
         }
+
+        val btningresar = findViewById<Button>(R.id.btningresar)
+
+        btningresar.setOnClickListener {
+
+            val pantallainiciar = Intent(this, MainActivity::class.java)
+            startActivity(pantallainiciar)
+        }
     }
 }
